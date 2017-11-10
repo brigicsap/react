@@ -1,11 +1,14 @@
 # React Practice
 
-This is a mock project to practice React.
-Using a [JSONPlaceholder](https://jsonplaceholder.typicode.com/) as a fake API.
-The project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This is a mock project to practice React.<br>
+The project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).<br>
+Using  [JSONPlaceholder](https://jsonplaceholder.typicode.com/) to fake the API.<br>
 Using [glamor](https://github.com/threepointone/glamor) for styling.
 
 ## Install and build
+
+### `npm install`
+Installs all dependencies.
 
 ### `npm start`
 
@@ -27,5 +30,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
-
-See the section about [deployment](#deployment) for more information.
