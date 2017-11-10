@@ -3,8 +3,8 @@ import HeaderStyles from './HeaderStyles.js'
 
 const Header = () => (
   <div className={HeaderStyles}>
-      <h1>Brigi Csap</h1>
-      <p>front end developer</p>
+      <h1>main title</h1>
+      <p>lorem ipsum dolor</p>
   </div>
 );
 

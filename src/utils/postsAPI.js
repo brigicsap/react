@@ -11,11 +11,11 @@ const headers = {
 };
 
 export const get = (postId) =>
-  fetch(`${api}/posts/${postId}`, { headers })
+  fetch(`${api}/photos/${postId}`, { headers })
     .then(res => res.json())
     .then(data => data.post);
 
 export const getAll = () =>
-  fetch(`${api}/posts/`, { headers })
+  fetch(`${api}/photos/`, { headers })
     .then(res => res.json())
     .then(data => data);

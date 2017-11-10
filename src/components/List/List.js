@@ -2,9 +2,16 @@ import React from 'react';
 import ListStyles from './ListStyles.js';
 import ListArticle from '../ListArticle/ListArticle';
 
-const List = () => (
+const List = (props) => (
   <div className={ListStyles}>
-      <ListArticle/>
+      {
+        Object
+          .keys(props)
+          .map(key => <ListArticle
+            key={key}
+            {...props[key]}
+          />)
+      }
   </div>
 );
 

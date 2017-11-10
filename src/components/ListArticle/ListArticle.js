@@ -1,11 +1,13 @@
 import React from 'react';
-import ListArticleStyles from './ListArticleStyles.js'
+import ListArticleStyles from './ListArticleStyles.js';
+import Thumbnail from '../../components/Thumbnail/Thumbnail';
 
-const ListArticle = () => (
+const ListArticle = (props) => (
   <div className={ListArticleStyles}>
-    <span>category</span>
-    <h3>list article heading</h3>
-    <p>list article description</p>
+    <span>{ props.id }</span>
+    <h3>{ props.title }</h3>
+    <Thumbnail
+      url={props.thumbnailUrl} />
   </div>
 );
 

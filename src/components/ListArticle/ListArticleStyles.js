@@ -5,6 +5,7 @@ let ListArticleStyles = css({
   fontSize: '20px',
   lineHeight: '30px',
   padding: '20px',
+  width: '25%',
 
   '& span': {
     fontSize: '14px'
