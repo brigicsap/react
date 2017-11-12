@@ -1,5 +1,5 @@
 import React from 'react';
-import AppStyles from './AppStyles';
+import MainStyles from './MainStyles';
 import * as postsAPI from '../../utils/postsAPI';
 
 //split layout
@@ -9,7 +9,7 @@ import * as postsAPI from '../../utils/postsAPI';
 import Header from '../../components/Header/Header';
 import List from '../../components/List/List';
 
-export default class App extends React.Component {
+export default class Main extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -27,7 +27,7 @@ export default class App extends React.Component {
     const { posts } = this.state;
 
     return (
-        <div className={AppStyles}>
+        <div className={MainStyles}>
           <Header/>
           <List
             {...posts}

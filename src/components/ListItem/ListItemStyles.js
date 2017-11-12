@@ -1,6 +1,6 @@
 import { css } from 'glamor';
 
-let ListArticleStyles = css({
+let ListItemStyles = css({
   boxShadow: '5px 5px 0 0 #000',
   fontSize: '20px',
   lineHeight: '30px',
@@ -12,4 +12,4 @@ let ListArticleStyles = css({
   }
 });
 
-export default ListArticleStyles;
+export default ListItemStyles;
