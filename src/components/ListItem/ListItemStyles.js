@@ -5,10 +5,8 @@ let ListItemStyles = css({
   fontSize: '20px',
   lineHeight: '30px',
   padding: '20px',
-  width: '25%',
-
-  '& span': {
-    fontSize: '14px'
+  '@media(min-width: 600px)': {
+    width: '50%'
   }
 });
 
