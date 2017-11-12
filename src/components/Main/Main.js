@@ -1,6 +1,6 @@
 import React from 'react';
-import AppStyles from './AppStyles';
-import * as postsAPI from '../../utils/postsAPI';
+import MainStyles from './MainStyles';
+import * as usersAPI from '../../utils/usersApi';
 
 //split layout
 // import FixedSide from '../../components/FixedSide/FixedSide';
@@ -9,28 +9,28 @@ import * as postsAPI from '../../utils/postsAPI';
 import Header from '../../components/Header/Header';
 import List from '../../components/List/List';
 
-export default class App extends React.Component {
+export default class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      posts: []
+      users: []
     }
   }
 
   componentDidMount() {
-    postsAPI.getAll().then(posts => {
-      this.setState({ posts: posts });
+    usersAPI.getAll().then(users => {
+      this.setState({ users: users });
     });
   }
 
   render() {
-    const { posts } = this.state;
+    const { users } = this.state;
 
     return (
-        <div className={AppStyles}>
+        <div className={MainStyles}>
           <Header/>
           <List
-            {...posts}
+            {...users}
           />
         </div>
     );
