@@ -2,10 +2,6 @@ import React from 'react';
 import MainStyles from './MainStyles';
 import * as postsAPI from '../../utils/postsAPI';
 
-//split layout
-// import FixedSide from '../../components/FixedSide/FixedSide';
-// import ListSide from '../../components/ListSide/ListSide';
-
 import Header from '../../components/Header/Header';
 import List from '../../components/List/List';
 
@@ -19,7 +15,9 @@ export default class Main extends React.Component {
 
   componentDidMount() {
     postsAPI.getAll().then(posts => {
-      this.setState({ posts: posts });
+      //only get the first 100 items to reduce load time
+      const filteredPosts = posts.filter(item => item.id <= 100);
+      this.setState({ posts: filteredPosts });
     });
   }
 
